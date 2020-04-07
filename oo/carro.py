@@ -1,20 +1,12 @@
 class Carro:
-    def __init__(self, *motor, aceleracao= None,freagem= None):
-        self.aceleracao = list(aceleracao)
-        self.freagem =list(freagem)
-
-        velocidade = aceleracao() - freagem()
-        velocidade +=0
-
-        if __name__ == '__main__':
-            aceleracao=(7)
-            freagem=(3)
-            print(velocidade)
+    def __init__(self, *velocidade, aceleracao=None, freagem = None):
+        self.aceleracao = aceleracao
+        self.freagem = freagem
+        self.velocidade = list(velocidade)
 
 
-
-
-
-
-
+if __name__ == '__main__':
+    calculodavelocidade1 = Carro(aceleracao=10)
+    calculodavelocidade2 = Carro( freagem=3)
+    print((calculodavelocidade1.aceleracao)-(calculodavelocidade2.freagem))
 
