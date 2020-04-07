@@ -7,6 +7,6 @@ class Carro:
 
 if __name__ == '__main__':
     calculodavelocidade1 = Carro(aceleracao=10)
-    calculodavelocidade2 = Carro( freagem=3)
-    print((calculodavelocidade1.aceleracao)-(calculodavelocidade2.freagem))
-
+    calculodavelocidade2 = Carro(freagem=3)
+    velocidade=((calculodavelocidade1.aceleracao)-(calculodavelocidade2.freagem))
+    print(velocidade)
